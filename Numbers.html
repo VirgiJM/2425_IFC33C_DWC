@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+</head>
+
+<body>
+    <script>
+        // No se distingue entre números enteros y flotantes en JS.
+        // Los números de coma flotante utilizan 64 bits según IEEE 754
+        let x = 3.987654;
+        let y = 4;
+        let a = "99"; // Es un String.
+
+        console.log(Number.MAX_VALUE);
+        console.log(Number.MIN_VALUE);
+
+        let z = parseInt(a); // La función parseInt convierte un valor a un entero (siempre y cuando se pueda).
+        let zz = parseFloat(y * x);
+        console.log(typeof (z));
+        console.log(zz);
+
+        let s = x.toFixed(2); // Sirve para eliminar decimales. El número entre paréntesis es la cantidad de decimales que quedarán.
+
+        console.log(s); // El número quedará redondeado.
+
+        let b = "Hola";
+        let c = parseInt(b); // No se puede convertir a un entero -> NaN
+        console.log(c); // NaN es un valor.
+
+        console.log(Number.isNaN(b)); // La función Number.isNaN devolverá un boolean de si el valor introducido es NaN o no.
+        console.log(Number.isNaN(c));
+        console.log(isNaN(x)); // Se puede suprimir el Number..
+    </script>
+</body>
+
+</html>

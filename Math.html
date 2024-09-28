@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+</head>
+
+<body>
+    <script>
+        let a = 3.2;
+        let b = 5.6;
+
+        // Math suele utilizarse para redondear
+        let c = Math.floor(a); // Redondeará hacia abajo
+        let d = Math.floor(b);
+
+        const PI = Math.PI;
+
+        console.log(a + " redondeado: " + c + ".", b + " redondeado: " + d);
+        let e = Math.ceil(a); // Redondea hacia arriba
+        console.log(e);
+
+        let g = Math.round(a); // Redondeo natural
+        let h = Math.round(b);
+
+        console.log(g);
+        console.log(h);
+
+        let i = Math.random();
+        console.log(i);
+
+        // Ejercicio. Queremos obtener un número aleatorio entre el 1 y 6. Ambos incluidos.
+        let j = Math.random() * 6;
+        let k = Math.random() * 6 + 1; // Está entre 1 y 6.999999....
+        let dado = Math.floor(Math.random() * 6 + 1);
+        console.log(dado);
+
+        // Ejercicio; Obtener un número aleatorio entre 2 y 6.
+        let m = Math.random() * 5; // Valores entre 0 y 5 (sin incluir el 5);
+        let n = Math.random() * (6 - 2 + 1); // Es el equivalente a la línea de encima; valores entre 0 y 5 (por los decimales).
+        let o = Math.floor(Math.random() * (6 - 2 + 1)); // Valores enteros entre 0 y 4.
+        let p = Math.floor(Math.random() * (6 - 2 + 1)) + 2; // Valores enteros entre 2 y 6. 
+
+        let max = 6;
+        let min = 2;
+        let formula = Math.floor(Math.random() * (max - min + 1)) + min; // Fórmula que servirá para sacar un número entre uno y otro.
+        console.log(formula);
+
+        console.log(typeof max, typeof "6");
+        console.log(max, "6");
+        
+        let hoy = new Date();
+        console.log(hoy);
+        console.log(hoy.getDate());
+    </script>
+</body>
+
+</html>
