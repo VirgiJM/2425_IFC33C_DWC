@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+
+<body>
+    <script>
+        // Para declarar funciones utilizamos la palabra reservada function
+
+        function suma(a, b) {
+            return a + b;
+        }
+
+        console.log(suma(2, 2));
+
+        // Las funciones en JavaScript son valores; 
+        let a = suma(4, 5); // 9
+        let b = suma; // B Guarda toda la función suma.
+        let c = b(4, 4);
+        console.log(c);
+        console.log(b);
+
+        function Persona(nombre, apellidos) {
+            this.nombre = nombre; // La variable de persona nombre va a recibir el valor del parámetro nombre.
+            this.apellidos = apellidos;
+            // This es una partícula utilizada para hacer una llamada a la función en la que se encuentra.
+
+        }
+        persona1 = new Persona("Virginia", "Jiménez");
+        console.log(persona1);
+
+        // Funciones anónimas
+        let anonima = function () {
+            return "Hola";
+        }
+        console.log(anonima());
+
+        let anonima2 = function (x) {
+            return "Hola " + x;
+        };
+        // Funciones flecha
+        (a) => {
+            return a + 100;
+        }
+
+        let arrowFunction = (x) => {
+            return "Adiós " + x; 
+        }
+
+        console.log(arrowFunction());
+        console.log(arrowFunction("Pepe"));
+
+    </script>
+</body>
+
+</html>

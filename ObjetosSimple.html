@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Simples</title>
+</head>
+<body>
+    <script>
+
+        // Los objetos en JavaScript son prototípicos; utilizan el objeto Prototype.
+        let persona1 = {
+            nombre: "Virginia",
+            apellidos: "Jiménez Molina"
+        }
+
+        console.log(persona1);
+        console.log(persona1.apellidos);
+
+        persona1.numPies = 2; // Se creará la propiedad y será añadida al objeto.
+        console.log(persona1, persona1.numPies);
+        console.log(persona1.numOjos); // Si no le asignamos valor a la propiedad añadida con un ".", dará undefined.
+        console.log(persona1);
+
+    </script>
+</body>
+</html>

@@ -16,6 +16,9 @@
         let cruz = 2;
         let numRandom = Math.floor(Math.random() * (cruz - cara + 1) + cara); // Fórmula para generar un número entero entre el mínimo (cara) y el máximo (cruz).
         console.log(numRandom); // Un simple console log para comprobar que el número generado sea 1 o 2.
+
+        // let formula = Math.random()<0.5?"Cara":"Cruz";
+        // numRandom==1?"Cara":"Cruz";
         if (numRandom === 1) { // Si el número generado es 1...
             alert("Ha salido cara, ¡has ganado!"); // Mostrará este mensaje por pantalla.
         } else { // En caso contrario...
