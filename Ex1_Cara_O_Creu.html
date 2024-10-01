@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara o cruz</title>
+</head>
+
+<body>
+    <h1>Cara o creu</h1>
+    <p>Creeu el joc de cara o creu. Nosaltres sempre jugarem amb la cara que serà el número 1. El programa ha de
+        decidir un nombre aleatori entre 1 i 2 i si surt 1 (cara) hem guanyat, en altra cas, hem perdut.</p>
+    <script>
+        let cara = 1; 
+        let cruz = 2;
+        let numRandom = Math.floor(Math.random() * (cruz - cara + 1) + cara); // Fórmula para generar un número entero entre el mínimo (cara) y el máximo (cruz).
+        console.log(numRandom); // Un simple console log para comprobar que el número generado sea 1 o 2.
+        if (numRandom === 1) { // Si el número generado es 1...
+            alert("Ha salido cara, ¡has ganado!"); // Mostrará este mensaje por pantalla.
+        } else { // En caso contrario...
+            alert("Ha salido cruz, ¡has perdido!"); // Mostrará este otro mensaje por pantalla.
+        }
+    </script>
+</body>
+
+</html>
