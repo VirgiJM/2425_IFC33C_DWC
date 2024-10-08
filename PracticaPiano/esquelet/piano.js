@@ -6,14 +6,17 @@ function Nota(nom, tipus) { // Esto es un objeto llamado Nota.
 let nota1 = new Nota("Mi", ""); // Nota creada. Es un objeto. Cuando es New, siempre es un objeto (se utiliza para inicializarlo).
 let nota2 = new Nota("Do", "#");
 let cerca = [nota1, nota2];
-let contador = 2;
+// let contador = 2;
 function addCerca(nomNota, tipus) {
-
     let nota = new Nota(nomNota, tipus);
-    cerca[contador] = [nota];
-    contador++;
+    // cerca[contador] = [nota];
+    // contador++;
+    cerca.push(nota);
 }
 
+function cercador(partitura) {
+        
+}
 // let nota1= "Mi";
 // let tipo1 = "Normal";
 
@@ -26,3 +29,8 @@ console.log(nota2);
 addCerca("Re", "");
 addCerca("Fa", "#");
 console.log(cerca);
+
+
+
+const PARTITURA1 = "DO DO RE DO FA MI DO DO RE DO SOL FA";
+const PARTITURA2 = "DO RE MI FA FA SOL SOL LA# LA#";
