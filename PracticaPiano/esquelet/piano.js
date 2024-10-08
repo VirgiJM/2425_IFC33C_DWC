@@ -97,7 +97,7 @@ let partituras = [laBalanguera, happyBirthday, imagine]; // Lista de partituras
 // addCerca("FA", "");
 // addCerca("SOL", "#");
 
-console.log(cerca);
+// console.log(cerca);
 
 // Llamamos a la función cercador
 cercador(partituras);
