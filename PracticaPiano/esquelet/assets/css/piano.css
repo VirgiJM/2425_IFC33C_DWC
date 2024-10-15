@@ -106,3 +106,7 @@ button.btn {
     background-color: #fffde2;
     
 }
+
+li {
+    list-style: none; /* Esto sirve para quitar los puntos de las listas. */
+}
