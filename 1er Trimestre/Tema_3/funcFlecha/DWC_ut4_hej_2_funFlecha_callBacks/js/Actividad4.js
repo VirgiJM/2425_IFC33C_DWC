@@ -21,6 +21,7 @@ let mostrar = (lista) => {
         }
         ul.appendChild(li);
     });
+    console.log("Contexto: ", this);
 }
 
 mostrar(tareas);
