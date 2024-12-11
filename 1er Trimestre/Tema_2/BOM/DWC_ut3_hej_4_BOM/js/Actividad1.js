@@ -1,8 +1,8 @@
 
-// Nombre del navegador
+// Nombre del navegador.
 let nombre = navigator.userAgent;
 
-// Versión del navegador
+// Versión del navegador.
 let version = navigator.appVersion; // Obsoleto, pero funciona.
 
 // Cookies activadas.
