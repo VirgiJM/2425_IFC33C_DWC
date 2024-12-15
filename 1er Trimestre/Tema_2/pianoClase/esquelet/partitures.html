@@ -5,19 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partituras</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para centrar y mover hacia arriba el texto "Score Finder" */
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 800px; /* Ajusta este valor para la altura deseada */
+        }
+
+        nav {
+            width: 100%;
+            background-color: #d50000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .nuevaPartitura {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d50000;
+            color: white;
+            margin-top: 20px; /* Espacio entre la barra de navegación y el párrafo */
+        }
+
+        .nuevaPartitura p {
+            margin: 0;
+            font-size: 24px;
+            text-align: center;
+            cursor: default;
+        }
+    </style>
 </head>
 
 <body>
-    <div>
-        <h1>Score Finder</h1>
-        <ul id="lista">
-            <li class="elementosLista" id="partituras">Partituras</li>
-            <li class="elementosLista" id="login">Login</li>
-        </ul>
+    <nav>
+        <div class="barranav">
+            <h1>Score Finder</h1>
+            <ul id="lista">
+                <li class="elementosLista">Partituras</li>
+                <li class="elementosLista" id="login">Login</li>
+            </ul>
+        </div>
+    </nav>
+    <div id="nuevo" class="nuevaPartitura">
+        <p>Nueva partitura</p>
     </div>
     <div id="partituras">
-
     </div>
     <script type="module" src="./assets/js/partituras.js"></script>
 </body>

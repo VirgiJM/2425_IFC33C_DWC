@@ -60,8 +60,8 @@ for (let cancion of canciones) {
     td.innerHTML = "Editar ";
     td.appendChild(i);  // Insertar icono
     tr.appendChild(td);
-    
-    
+
+
     td = document.createElement("td");
     i2 = document.createElement("i");
     i2.className = "fa-solid fa-trash";
@@ -121,7 +121,7 @@ for (let td of tds) {
 let ths = document.getElementsByTagName("th");
 for (let th of ths) {
     th.style.border = "1px solid black";
-    th.style.backgroundColor = "red";
+    th.style.backgroundColor = "#d50000";
     th.style.color = "white";
 }
 const maxTh = ths.length - 1;
@@ -141,7 +141,23 @@ function eliminar() {
 }
 
 // Lo del Login
-let idLogin = document.getElementById("login");
-idLogin.style.cursor = "pointer";
-let abrir = window.open("login.html");
-idLogin.onclick = abrir;
+// let idLogin = document.getElementById("login");
+// idLogin.style.cursor = "pointer";
+// if (idLogin.onclick) {
+//     window.open("login.html", '_blank', "height=700,width=700");
+// }
+// let id = document.getElementById("login");
+// id.style.cursor = "pointer";
+// id.onclick = alert("HOLA");
+
+document.getElementById("login").style.cursor = "pointer";
+document.getElementById("login").onclick = function () {abrirLogin()};
+let ventana;
+function abrirLogin() {
+    ventana = window.open("login.html", '_blank', "height=450,width=600");
+    moverVentana();
+}
+
+function moverVentana() {
+    ventana.moveTo(550,250);
+}
