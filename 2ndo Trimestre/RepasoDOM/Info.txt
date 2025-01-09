@@ -1,0 +1,51 @@
+Los enunciados de estos ejercicios me los ha generado ChatGPT (para no repetir los que ya he hecho), para poder practicar DOM y JavaScript en general.
+
+Ejercicio 1: Crear una lista dinámica
+- Crea un archivo HTML con un botón y una lista desordenada vacía (<ul>).
+- Al hacer clic en el botón, pide al usuario un texto mediante un prompt.
+- Agrega un nuevo elemento (<li>) con el texto proporcionado al final de la lista.
+
+Ejercicio 2: Cambiar colores al hacer clic
+- Crea cinco <div>s con un color de fondo inicial (puedes usar diferentes colores).
+- Cuando el usuario haga clic en un <div>, cambia su color de fondo a un color aleatorio.
+- Usa Math.random() para generar los colores.
+
+Ejercicio 3: Contador de clics
+- Crea un botón con el texto "Haz clic aquí".
+- Cada vez que el usuario haga clic en el botón, muestra el número total de clics en un <p> debajo del botón.
+
+Ejercicio 4: Cambiar el contenido de un párrafo
+- Crea tres botones con los textos "Texto 1", "Texto 2" y "Texto 3".
+- Crea un <p> vacío en el HTML.
+- Al hacer clic en cada botón, cambia el contenido del <p> al texto correspondiente.
+
+Ejercicio 5: Mostrar y ocultar texto
+- Crea un botón con el texto "Mostrar/Ocultar" y un párrafo con un texto cualquiera.
+- Al hacer clic en el botón, alterna entre mostrar y ocultar el párrafo (puedes usar style.display o classList).
+- Ejercicio 6: Filtrar una tabla
+- Crea una tabla con tres columnas: Nombre, Edad y Ciudad. Llena la tabla con al menos cinco filas de datos.
+- Agrega un campo de entrada (<input>) en el que el usuario pueda escribir el nombre que quiere buscar.
+- Filtra las filas de la tabla en tiempo real para mostrar solo aquellas que coincidan con el texto ingresado.
+
+Ejercicio 7: Temporizador dinámico
+- Crea un botón con el texto "Iniciar temporizador" y un <p> para mostrar los segundos transcurridos.
+- Al hacer clic en el botón, inicia un contador que aumente el número en el <p> cada segundo.
+- Agrega un segundo botón que detenga el temporizador.
+
+Ejercicio 8: Añadir y quitar clases
+- Crea tres botones con los textos "Resaltar", "Ocultar" y "Restaurar".
+- Crea un párrafo con texto de ejemplo.
+- Al hacer clic en "Resaltar", cambia el fondo del párrafo a amarillo.
+- Al hacer clic en "Ocultar", oculta el párrafo.
+- Al hacer clic en "Restaurar", restaura el estado original del párrafo.
+
+Ejercicio 9: Crear una galería de imágenes
+- Crea un contenedor (<div>) vacío en el HTML.
+- Agrega tres imágenes al contenedor al cargar la página usando JavaScript.
+- Al hacer clic en una imagen, muéstrala en un tamaño más grande en otro <div>.
+
+Ejercicio 10: Lista con reordenamiento
+- Crea una lista ordenada (<ol>) con tres elementos iniciales.
+- Agrega dos botones: "Mover hacia arriba" y "Mover hacia abajo".
+- Selecciona un elemento de la lista haciendo clic en él.
+- Usa los botones para mover el elemento seleccionado hacia arriba o hacia abajo en la lista.
